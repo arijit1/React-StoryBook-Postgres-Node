@@ -3,7 +3,7 @@ import { updatePost_PUT, deletePost_DELETE } from '../API/api';
 
 class EditPost extends React.Component {
     constructor(props) {
-        super(props);
+        super();
         this.state = {
             currentPostID: props.postid,
             posts: props.posts
@@ -54,7 +54,7 @@ class EditPost extends React.Component {
                         </div>
                         <div className="col-sm-8 displaySelectedPost">
                             {this.state.posts.map((v) => {
-                                //console.log(v, this.state.currentPostID)
+                                console.log(v, this.state.currentPostID)
                                 if (v.post_id === this.state.currentPostID) {
                                     return <div key={v.post_id}>
                                         <p className="postViewTitle">  {v.post_name}</p>

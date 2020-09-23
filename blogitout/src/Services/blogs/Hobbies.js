@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from "react-router-dom";
 import { hobby_GET } from '../API/api';
 import { WritetPost, EditPost } from './blogindex';
+import '../CSS/service.css';
 
 class Hobbies extends React.Component {
     constructor(props) {
